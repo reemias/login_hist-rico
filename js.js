@@ -6,3 +6,17 @@ document.getElementById('loginButton').addEventListener('click', function() {
         alert('Senha incorreta. Tente novamente.');
     }
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const loginButton = document.getElementById('loginButton');
+    const inputs = document.querySelectorAll('input');
+
+    inputs.forEach(input => {
+        input.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Evita qualquer ação padrão
+                loginButton.click(); // Aciona o clique do botão
+            }
+        });
+    });
+});
