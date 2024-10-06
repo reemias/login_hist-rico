@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Degradê com cores de desenvolvedor web */
+    
     color: #ecf0f1;
     display: flex;
     flex-direction: column;
